@@ -32,7 +32,7 @@ export default class Menu extends Component {
   }
 
   componentDidMount() {
-    fetch('http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu')
+    fetch('https://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu')
     .then(results => results.json()).then(data => {
       this.setState({
         menu: data[0],
